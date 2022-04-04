@@ -40,7 +40,7 @@ public class DemoqaTest
         $("#firstName").setValue(firstName);
         $("#lastName").setValue(lastName);
         $("#userEmail").setValue(userEmail);
-        $("[id=genterWrapper]").$(byText(gender)).click();
+        $("#genterWrapper").$(byText(gender)).click();
         $("#userNumber").setValue(userNumber);
 
         $("#dateOfBirthInput").click();
@@ -52,9 +52,14 @@ public class DemoqaTest
         $(byText(hobbies)).click();
         $("#uploadPicture").uploadFromClasspath("file/1.png");
         $("#currentAddress").setValue(currentAddress);
+       /* $("#state").click();
+        $("#stateCity-wrapper").$(byText(state)).click();
+        $("#city").$(byText(city)).click();*/
+
         $("#state").click();
-        $("#stateCity-wrapper").$(byText(state));
-        $("#city").$(byText(city));
+        $(byText(state)).click();
+        $("#city").click();
+        $(byText(city)).click();
 
         $("#submit").click();
 
