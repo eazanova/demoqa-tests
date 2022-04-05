@@ -61,7 +61,7 @@ public class DemoqaTest
         $("#submit").click();
 
         $(".table-responsive").shouldHave(text(firstName), text(lastName), text(userEmail), text(gender),
-                text(userNumber), text("13 September,2000"), text(subjects), text(hobbies), text(currentAddress),
+                text(userNumber), text("September 13th, 2000"), text(subjects), text(hobbies), text(currentAddress),
                 text(state), text(city));
     }
 }
