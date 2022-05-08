@@ -27,7 +27,8 @@ public class GithubSelenideTest
     {
         open("/selenide/selenide");
         $("#wiki-tab").click();
-        $("#wiki-body").find(byText("Soft assertions")).click();
+        $(".js-wiki-more-pages-link").click();
+        $("#wiki-pages-box").find(byText("SoftAssertions")).click();
         $$("#wiki-body").find(Condition.text("Using JUnit5 extend test class")).shouldBe(Condition.visible);
     }
 }
